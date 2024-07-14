@@ -1,6 +1,6 @@
 <template>
   <header role="banner">
-    <div class="logo"></div>
+    <!--    <div class="logo"></div>-->
     <nav class="navigation" aria-label="Main navigation">
       <ul class="nav-list">
         <li class="nav-item">
@@ -26,9 +26,9 @@
         </li>
       </ul>
     </nav>
-    <button class="hire-button">
-      <span> Hire me </span>
-    </button>
+    <!--    <button class="hire-button">-->
+    <!--      <span> Hire me </span>-->
+    <!--    </button>-->
   </header>
 </template>
 
@@ -40,18 +40,18 @@
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
   color: var(--light-tertiary-color);
-  background: rgb(129, 33, 208);
-  background: linear-gradient(
-    90deg,
-    var(--dark-tertiary-color) 50%,
-    var(--dark-secondary-color) 80%,
-    var(--dark-primary-color) 100%
-  );
+  background: var(--dark-tertiary-color);
   padding: 0 48px;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 ul {
@@ -75,5 +75,6 @@ li {
   letter-spacing: 1px;
   appearance: none;
   text-transform: uppercase;
+  width: 200px;
 }
 </style>

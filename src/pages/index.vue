@@ -1,10 +1,15 @@
 <template>
-  <div>
-    <h1>Welcome to the homepage</h1>
-    <AppAlert> This is an auto-imported component </AppAlert>
-  </div>
+  <Home />
 </template>
 
-<script></script>
+<script>
+import { defineComponent } from 'vue';
+import Home from '~/sections/Home.vue';
+import About from '~/sections/About.vue';
+
+export default defineComponent({
+  components: { About, Home },
+});
+</script>
 
 <style lang="css"></style>
